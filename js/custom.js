@@ -47,3 +47,11 @@ $('input.number').keyup(function(event) {
     ;
   });
 });
+
+$('.btn-load').on('click', function() {
+    var $this = $(this);
+  $this.button('loading');
+    setTimeout(function() {
+       $this.button('reset');
+   }, 5000);
+});
