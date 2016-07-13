@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Sale Stock - IX Designer Assessment</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,400' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="page-scroll">
+                <a class="page-scroll" href="#page-top">
+                    <img src="images/logo.png" class="logo">
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Form Section -->
+    <section id="form" class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal" role="form">
+                        <div class="row">
+                            <!-- Data Sista Section -->
+                            <div class="box col-md-12">
+                                <span>Data Sista</span>
+                                <div class="row">
+                                    <div class="col-md-12 form-content form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="name">Nama Sista *</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="name" placeholder="Masukkan nama sista" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="email">Email Sista</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="Masukkan email sista">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="phone">Handphone Sista</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="phone" placeholder="Masukkan handphone sista">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Order Sista Section -->
+                            <div class="box col-md-12">
+                                <span>Order Sista</span>
+                                <div class="row">
+                                    <div class="col-md-12 form-content form-horizontal">
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2" for="nomor-order">Nomor Order *</label>
+                                            <div class="col-sm-10">
+                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Masukkan Nomor Order">
+                                                    <option>100123456</option>
+                                                    <option>200456789</option>
+                                                    <option>300345678</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12 text-right">
+                                                <button type="button" class="btn btn-danger btn-custom">Load</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <table id="eventsTable" data-toggle="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="36" data-field="state" data-checkbox="true"></th>
+                                                            <th width="80" data-field="name">Nama Item</th>
+                                                            <th width="100" data-field="sku">SKU</th>
+                                                            <th width="120" data-field="price">Harga Satuan</th>
+                                                            <th width="210" data-field="reason">Alasan Retur</th>
+                                                            <th width="210" data-field="file">Bukti Foto</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>Kiraniar Plain Casual Cardigan</td>
+                                                            <td>BMW-ANCD-6MUS-RX4</td>
+                                                            <td>RP 85.000</td>
+                                                            <td style="overflow:hidden;">
+                                                                <select class="selectpicker show-tick form-control" data-container="body" data-live-search="true" title="Silahkan Pilih">
+                                                                    <option>Bolong</option>
+                                                                    <option>Jahitan Tidak Rapi</option>
+                                                                    <option>Kebesaran</option>
+                                                                    <option>Kekecilan</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <input type="file" class="filestyle" data-input="false" data-icon="false" data-size="sm">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>Kiraniar Plain Casual Cardigan</td>
+                                                            <td>BMW-ANCD-6MUS-RX4</td>
+                                                            <td>RP 85.000</td>
+                                                            <td style="overflow:hidden;">
+                                                                <select class="selectpicker show-tick form-control" data-container="body" data-live-search="true" title="Silahkan Pilih">
+                                                                    <option>Bolong</option>
+                                                                    <option>Jahitan Tidak Rapi</option>
+                                                                    <option>Kebesaran</option>
+                                                                    <option>Kekecilan</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>
+                                                                <input type="file" class="filestyle" data-input="false" data-icon="false" data-size="sm">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <hr>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-7">                                                
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-3" for="shipping">Biaya Kirim Balik</label>
+                                                    <div class="col-sm-9">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon" id="basic-addon1">RP</span>
+                                                            <input type="text" class="form-control number" id="shipping" placeholder="Masukkan biaya kirim balik">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <label for="keterangan">Keterangan</label>
+                                                        <textarea class="form-control" rows="5" id="keterangan"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <label for="keterangan">Bukti Foto Ongkir</label>
+                                                        <input type="file" id="imgInp" class="filestyle" data-icon="false" data-size="sm">
+                                                        <br>
+                                                        <img id="imgPlc" src="" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="data-bank">
+                                            <!-- Data Bank Sista Section -->
+                                            <div class="box col-md-12">
+                                                <span>Data Bank Sista</span>
+                                                <div class="row">
+                                                    <div class="col-md-6 form-content">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-12">
+                                                                <label for="bank">Nama Bank</label>                           
+                                                                <select class="selectpicker show-tick form-control" data-live-search="true" title="Pilih Nama Bank">
+                                                                    <option>Bank Central Asia (BCA)</option>
+                                                                    <option>Bank Mandiri</option>
+                                                                    <option>Bank Negara Indonesia (BNI)</option>
+                                                                    <option>Bank Rakyat Indonesia (BRI)</option>
+                                                                    <option>Bank Tabungan Negara (BTN)</option>
+                                                                    <option>Bank Danamon Indonesia</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-sm-12">
+                                                                <label for="kcp-bank">Cabang / Kota</label>
+                                                                <input type="text" class="form-control" id="kcp-bank" placeholder="Masukkan cabang / kota bank">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 form-content">
+                                                        <div class="form-group">
+                                                            <div class="col-sm-12">
+                                                                <label for="account-number">Nomor Rekening</label>
+                                                                <input type="text" class="form-control" id="account-number" placeholder="Masukkan nomor rekening">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-sm-12">
+                                                                <label for="account-name">Nama Pemilik Rekening</label>
+                                                                <input type="text" class="form-control" id="account-name" placeholder="Masukkan nama pemilik rekening">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="col-md-12 text-right">
+                                                <button type="button" class="btn btn-default btn-custom">Batal</button>
+                                                <button type="submit" class="btn btn-danger btn-custom">Kirim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="js/bootstrap-filestyle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
+
+    <!-- Other JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
