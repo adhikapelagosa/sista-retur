@@ -59,7 +59,10 @@ Setelah mengisi
 
 
 ### Tabel Order
-
+Didalam tabel order ini terdapat element seperti
+* Checkbox
+* Select option dengan memunculkan suggest text untuk mempermudah user menemukan alasan retur yang dimaksud
+* Dan input type=file untuk mengunggah bukti foto.
 
 ![tabel order](http://retur.uiuxfirst.com/images/tabel-order.jpg "Tabel order")
 
